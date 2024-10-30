@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <!--Title Section-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/home_title_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@android:color/black">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--Notification Icon-->
+
+
+                    <ImageView
+                        android:id="@+id/notify_icon_frag"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/category_select_bg"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/home_notification_logo" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <!--Search logo-->
+
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_icon_frag_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_toStartOf="@id/notify_icon_frag"
+                        android:background="@color/category_select_bg"
+                        android:padding="@dimen/_2sdp"
+                        style="@style/SearchViewStyle"/>
+
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <!--Second ad section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_below="@id/home_title_section">
+
+
+
+            <RelativeLayout
+                android:id="@+id/second_adv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/new_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="New Collection"
+                    android:textColor="@color/new_col_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_below="@id/new_collection" />
+
+
+            </RelativeLayout>
+
+            <!--Products Recycler view-->
+            <RelativeLayout
+                android:id="@+id/main_products_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_adv"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/popular_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Popular Product"
+                    android:textColor="@color/new_col_color"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/see_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="see More"
+                    android:textColor="@color/new_col_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/popular_product"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar_rv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_recyclerview"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/home_dataLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_recyclerview"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/ContinueshoppingBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/cart_shopping_bg"
+                        android:fontFamily="@font/nunito_bold"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Continue Shopping"
+                        android:textColor="@color/countinue_btn_txt_color"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="visible"
+                        app:layout_anchorGravity="bottom|center" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

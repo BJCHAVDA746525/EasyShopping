@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fragment_bg">
+
+    <!--Address Section-->
+    <RelativeLayout
+        android:id="@+id/address_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/address_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:visibility="visible">
+
+                <!--Name-->
+                <LinearLayout
+                    android:id="@+id/address_line1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/address_line_1_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/loginbg"
+                        android:fontFamily="@font/nunito_regular"
+                        android:hint="Address Line 1"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/changeDPColor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <!--Add Line 2-->
+                <LinearLayout
+                    android:id="@+id/address_line2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address_line1_layout"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/address_line_2_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/loginbg"
+                        android:fontFamily="@font/nunito_regular"
+                        android:hint="Address Line 2"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/changeDPColor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <!--City-->
+                <LinearLayout
+                    android:id="@+id/city_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address_line2_layout"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/city_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/loginbg"
+                        android:fontFamily="@font/nunito_regular"
+                        android:hint="City"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/changeDPColor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <!--Pin code-->
+                <LinearLayout
+                    android:id="@+id/pincode_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/city_layout"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/pincode_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/loginbg"
+                        android:fontFamily="@font/nunito_regular"
+                        android:hint="Pin Code"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/changeDPColor"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/save_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pincode_layout"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/save_add_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_border_btn"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:text="@string/save_continue"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/cancel_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/save_address_layout"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/edt_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cancel_add_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_border_btn"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:padding="@dimen/_6sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

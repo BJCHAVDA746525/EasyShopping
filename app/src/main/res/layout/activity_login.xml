@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@color/fragment_bg"
+    tools:context=".Activities.LoginActivity">
+
+    <!--Logo layout-->
+    <RelativeLayout
+        android:id="@+id/logolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/easylogo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logintextlaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logolayout">
+
+        <TextView
+            android:id="@+id/logtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp" />
+
+        <TextView
+            android:id="@+id/logsubtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logtext"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="@string/logsubtext"
+            android:textColor="@color/light_greytext"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logintextlaout"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/pass_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Email"
+                app:boxStrokeColor="@color/bottom_nav_color"
+                app:counterOverflowTextColor="@color/bottom_nav_color"
+                app:cursorColor="@color/bottom_nav_color"
+                android:outlineAmbientShadowColor="@color/bottom_nav_color"
+                app:hintTextColor="@color/bottom_nav_color"
+                app:startIconDrawable="@drawable/login_mail_icon"
+                app:startIconContentDescription="@string/content_description_end_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_input_edt" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:boxStrokeColor="@color/bottom_nav_color"
+                app:counterOverflowTextColor="@color/bottom_nav_color"
+                app:cursorColor="@color/bottom_nav_color"
+                android:outlineAmbientShadowColor="@color/bottom_nav_color"
+                app:hintTextColor="@color/bottom_nav_color"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/login_password_icon"
+                app:startIconContentDescription="@string/content_description_end_icon"
+                android:hint="Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass_edt_text"
+                    android:inputType="textPassword"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass_edt_layout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edt_border_btn"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edt_border_btn"
+                android:fontFamily="@font/nunito_bold"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/white"
+                android:indeterminateTintMode="src_atop"
+                android:padding="@dimen/_2sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn_layout"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="@string/new_register_text"
+                    android:textColor="@color/regi_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="@string/new_register_text2"
+                    android:textColor="@color/regis_color"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

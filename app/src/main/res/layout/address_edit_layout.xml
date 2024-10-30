@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fragment_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/edit_add_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_1sdp">
+
+        <!--title text-->
+        <TextView
+            android:id="@+id/edit_add_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Address Edit"
+            android:textColor="@color/home_title_txt_color"
+            android:textSize="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_add_title_layout"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:weightSum="3.00">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.00"
+            android:background="@drawable/product_btn_bg"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Edit Address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.00"
+            android:background="@drawable/product_btn_bg"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Delete Address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_btn_edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.00"
+            android:background="@drawable/product_btn_bg"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@color/fragment_bg"
+    tools:context=".Activities.RegisterActivity">
+
+    <!--Logo layout-->
+    <RelativeLayout
+        android:id="@+id/regilayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/easylogo" />
+
+    </RelativeLayout>
+
+    <!--Title texts-->
+    <RelativeLayout
+        android:id="@+id/regitextlaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regilayout">
+
+        <TextView
+            android:id="@+id/regitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/regisubtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regitext"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="@string/regisubtext"
+            android:textColor="@color/light_greytext"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <!--Edit Texts-->
+    <RelativeLayout
+        android:id="@+id/regi_edt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regitextlaout"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <!--Name-->
+        <LinearLayout
+            android:id="@+id/regi_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_border"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/profile_logo" />
+
+            <EditText
+                android:id="@+id/regi_name_input_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@color/loginbg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/edt_text_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--Email-->
+        <LinearLayout
+            android:id="@+id/regiemail_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regi_name_edt"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edt_border"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mail_inbox_app" />
+
+            <EditText
+                android:id="@+id/regi_email_input_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@color/loginbg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/edt_text_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--Phone-->
+        <LinearLayout
+            android:id="@+id/phoneEdt_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regiemail_edt"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edt_border"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mobile_logo" />
+
+            <EditText
+                android:id="@+id/regi_phone_input_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@color/loginbg"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:lines="1"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/edt_text_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:id="@+id/pass_edt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneEdt_edt"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edt_border"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/regi_pass_edt_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toLeftOf="@id/regi_hide_icon"
+                    android:layout_toRightOf="@id/regi_pass_logo"
+                    android:background="@color/loginbg"
+                    android:fontFamily="@font/nunito_regular"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@color/edt_text_color"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/regi_pass_logo"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/padlock" />
+
+                <ImageView
+                    android:id="@+id/regi_hide_icon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hide" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--Register Button-->
+        <LinearLayout
+            android:id="@+id/regi_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass_edt_layout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/regi_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edt_border_btn"
+                android:fontFamily="@font/nunito_bold"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+
+        <!--Login page text-->
+        <LinearLayout
+            android:id="@+id/login_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regi_btn_layout"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="@string/new_login_text"
+                    android:textColor="@color/regi_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="@string/new_login_text2"
+                    android:textColor="@color/regis_color"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/regi_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">EasyShopping</string>
+    <string name="logsubtext">Please enter your email &amp; password \n to access your account.</string>
+    <string name="new_register_text">Don\'t have an account ? </string>
+    <string name="new_register_text2"> Create Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="regisubtext">Please enter your Name, email &amp; password \n to create your account.</string>
+    <string name="name">Name</string>
+    <string name="new_login_text">Already have an Account ? </string>
+    <string name="new_login_text2">Login Now</string>
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="new_arrivals">New Arrivals</string>
+
+    <string name="product_description_txt">Rococo style, or Late Baroque, Style in interior design,
+        the decorative arts, painting, architecture, and sculpture that originated in Paris in the early
+        18th century. The word Rococo is derived from French rocaille, denoting the shell-covered rockwork used to
+        decorate artificial grottoes. Reacting against the ponderous Baroque that had become the official style of Louis XIV’s reign,
+        the Rococo was light, elegant, and elaborately ornamented. Several interior designers, painters, and engravers—among them Pierre Le Pautre,
+        Juste-Aurèle Meissonier, Jean Berain, and Nicolas Pineau—developed a lighter and more intimate style of decoration for the new residences of nobles in Paris,
+        and the style was disseminated throughout France by means of engravings. In these designers’ work, walls, ceilings,
+        and moldings feature interlacings of curves and countercurves based on S and C shapes as well as on shell forms and other natural shapes.
+        Chinese motifs were also employed (see chinoiserie).</string>
+    <string name="save_continue"><![CDATA[Save & Continue]]></string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="terms_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="email_note">Note : We will send verification email. \nplease verify email after that email change.</string>
+    <string name="delete_add_string">Are you sure you want to delete this address ?</string>
+    <string name="delete_msg">Are you sure you want to delete this card ?</string>
+    <string name="msg_token_fmt">Registration Token</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="terms_details"> Welcome to FurniFind. By downloading or using our app, you agree to abide by these Terms and Conditions. Please read them carefully before proceeding.\n\n
+
+        User Account\n
+        To use certain features of the app, you may be required to create an account. You agree to provide accurate and current information during registration.\n
+        You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.\n\n
+
+        Products and Orders\n
+        All products are subject to availability. We reserve the right to limit the quantity of any items or discontinue products at any time.\n
+        All prices listed on the app are in [Currency] and are subject to change without notice. Prices do not include applicable taxes, shipping, and handling charges unless stated otherwise.\n
+        Your receipt of an order confirmation does not signify our acceptance of your order, nor does it constitute confirmation of our offer to sell. We reserve the right to cancel or limit orders at our discretion.\n\n
+
+        Payment Terms\n
+        We accept various payment methods, including [Credit Card, PayPal, etc.]. All payments must be made at the time of order.\n
+        Our refund and return policy is outlined in the Refund Policy section of the app. Please review it before making any purchase.\n\n
+
+        Shipping and Delivery\n
+        Shipping costs will be calculated based on the delivery location and size of the items purchased.\n
+        Delivery times are estimates and may vary due to unforeseen circumstances.\n\n
+
+        Use of the App\n
+        You agree not to:\n
+        1. Use the app for illegal activities.\n
+        2. Post any content that is defamatory, offensive, or inappropriate.\n
+        3. Attempt to hack, exploit, or reverse-engineer the app.\n
+        We reserve the right to terminate your account and access to the app if you violate these terms or engage in fraudulent activity.\n\n
+
+        Limitation of Liability\n
+        We will not be liable for any damages arising from the use or inability to use the app, including but not limited to direct, indirect, incidental, punitive, and consequential damages.\n\n
+
+        Intellectual Property\n
+        All content, including but not limited to text, graphics, logos, and images, is the property of [FurnitureApp] or its content suppliers. You may not use, reproduce, or distribute any content without permission.\n\n
+
+        Changes to Terms\n
+        We reserve the right to update these Terms and Conditions at any time. Changes will be effective when posted on the app. Continued use of the app after changes constitutes your acceptance of the new terms.\n\n
+
+        Governing Law\n
+        These terms are governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising out of or related to these terms will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].\n\n
+
+        Contact Us\n
+        For any questions or concerns regarding these Terms and Conditions, please contact us at [support@furnitureapp.com].</string>
+
+    <string name="privacy_details"> Privacy Policy\n\n
+
+        At FurniFind, we respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and protect your data when you use our app.\n\n
+
+        Information We Collect\n
+        We may collect the following types of information:\n
+        1. Personal Information: Name, email address, phone number, shipping address, and payment details provided when you create an account or make a purchase.\n
+        2. Usage Data: Information about how you interact with the app, such as pages visited, time spent on the app, and features used.\n
+        3. Device Information: Details about the device you use, including IP address, browser type, and operating system.\n\n
+
+        How We Use Your Information\n
+        The information we collect is used for the following purposes:\n
+        1. To process transactions and deliver the products you order.\n
+        2. To improve the functionality and performance of our app.\n
+        3. To provide customer support and respond to inquiries.\n
+        4. To send promotional emails, offers, and updates, which you can opt out of at any time.\n
+        5. To comply with legal obligations or resolve disputes.\n\n
+
+        Sharing Your Information\n
+        We do not sell or rent your personal information to third parties. However, we may share your information with trusted third parties in the following situations:\n
+        1. Service Providers: We may share data with third-party vendors who help us operate the app, process payments, or deliver products.\n
+        2. Legal Compliance: We may disclose your information to comply with applicable laws, regulations, or legal proceedings.\n\n
+
+        Data Security\n
+        We implement a variety of security measures to protect your personal information. While we strive to use commercially acceptable means to protect your data, we cannot guarantee its absolute security.\n\n
+
+        Retention of Your Information\n
+        We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.\n\n
+
+        Your Data Rights\n
+        You have the right to:\n
+        1. Access and update your personal information.\n
+        2. Request the deletion of your data from our systems.\n
+        3. Opt out of receiving promotional communications.\n
+        4. Restrict the processing of your information in certain circumstances.\n
+        If you would like to exercise any of these rights, please contact us at [support@furnitureapp.com].\n\n
+
+        Cookies\n
+        Our app may use cookies and similar tracking technologies to enhance your experience. You can adjust your device or browser settings to refuse cookies, but this may limit certain functionalities of the app.\n\n
+
+        Third-Party Links\n
+        Our app may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these external sites.\n\n
+
+        Changes to This Privacy Policy\n
+        We reserve the right to update or modify this Privacy Policy at any time. Changes will be posted on this page, and your continued use of the app constitutes your acceptance of the new terms.\n\n
+
+        Governing Law\n
+        This Privacy Policy is governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising out of or related to this Privacy Policy will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].\n\n
+
+        Contact Us\n
+        If you have any questions about this Privacy Policy or how we handle your data, please contact us at [support@FurniFind.com].</string>
+    <string name="email_icon">email_icon</string>
+    <string name="email">Email</string>
+    <string name="password_icon">password_icon</string>
+    <string name="password">Password</string>
+    <string name="delivery_price">"Rs. "</string>
+    <string name="final_price">Password</string>
+    <string name="content_description_end_icon">login_end_icon\n</string>
+</resources>

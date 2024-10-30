@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@color/fragment_bg"
+    android:padding="@dimen/_30sdp">
+
+    <TextView
+        android:id="@+id/notification_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Title"
+        android:textColor="@color/changeDPColor"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/notification_body_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_title_dialog"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="body"
+        android:textColor="@color/changeDPColor"
+        android:textSize="@dimen/_15sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fragment_bg"
+    android:layout_margin="@dimen/_15sdp"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/delete_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/nunito_regular"
+        android:text="@string/delete_add_string"
+        android:textColor="@color/changeDPColor"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_msg"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="2.00">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_add_yes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.00"
+            android:background="@drawable/edt_border_btn"
+            android:text="Yes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_add_no_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.00"
+            android:background="@drawable/edt_border_btn"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    tools:context=".Fragments.StoreFragment">
+
+    <!--<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScroll_Store">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Store Title Section-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Store_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@android:color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/store_back_img"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/category_select_bg"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/back_arrow" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/store_title_frag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Store"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_18sdp" />
+
+                <!--Search logo-->
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/store_search_icon_frag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/category_select_bg"
+                    android:padding="@dimen/_2sdp"
+                    style="@style/SearchViewStyle"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <!--store category section-->
+        <RelativeLayout
+            android:id="@+id/product_cat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Store_title_layout"
+            android:layout_marginTop="@dimen/_5sdp">
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                android:scrollbars="none">
+
+                <!-- child view -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- LinearLayout children -->
+
+                    <ImageView
+                        android:id="@+id/All_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/all_logo" />
+
+                    <ImageView
+                        android:id="@+id/Chair_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chair" />
+
+                    <ImageView
+                        android:id="@+id/Stool_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stool" />
+
+                    <ImageView
+                        android:id="@+id/Dresser_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dresser" />
+
+                    <ImageView
+                        android:id="@+id/Table_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/table" />
+
+                    <ImageView
+                        android:id="@+id/Sofa_cat"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/circle"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sofa_chair" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+        <!--Products Recycler view-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_cat_layout"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/new_arr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/new_arrivals"
+                android:textColor="@color/new_col_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/store_filter_card"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:elevation="@dimen/_10sdp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/filter_store_img"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/filter_store" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/store_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/store_filter_card"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_rv_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/store_recyclerview"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--</androidx.core.widget.NestedScrollView>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

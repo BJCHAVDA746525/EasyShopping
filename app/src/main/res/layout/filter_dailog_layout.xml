@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Title Section-->
+    <RelativeLayout
+        android:id="@+id/filter_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_1sdp">
+
+        <!--title text-->
+        <TextView
+            android:id="@+id/filter_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Filter"
+            android:textColor="@color/home_title_txt_color"
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+
+    <!--Type Layout-->
+    <RelativeLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter_title_layout"
+        android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/type_txt"
+            style="@style/filter_heading_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type" />
+
+        <RadioGroup
+            android:id="@+id/filterRadioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_txt"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <RadioButton
+                android:id="@+id/all_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="All" />
+
+            <RadioButton
+                android:id="@+id/chair_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="Chair" />
+
+            <RadioButton
+                android:id="@+id/stool_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="Stool" />
+
+
+            <RadioButton
+                android:id="@+id/Dresser_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="Dresser" />
+
+            <RadioButton
+                android:id="@+id/Table_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="Table" />
+
+            <RadioButton
+                android:id="@+id/Sofa_filter_btn"
+                style="@style/type_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:padding="@dimen/_5sdp"
+                android:text="Sofa" />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_layout"
+        android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/price_filter_txt"
+            style="@style/filter_heading_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/minvalue_filter_txt"
+            style="@style/filter_minmax_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_filter_txt"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="min amount" />
+
+        <TextView
+            android:id="@+id/maxvalue_filter_txt"
+            style="@style/filter_minmax_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_filter_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="max amount" />
+
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/continuousRangeSlider"
+            style="@style/CustomRangeSliderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/minvalue_filter_txt"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:valueFrom="1000.0"
+            android:valueTo="57000.00"
+            app:haloColor="@color/colorAccent"
+            app:thumbColor="@color/colorAccent"
+            app:thumbRadius="@dimen/_10sdp"
+            app:trackColorActive="@color/colorAccent"
+            app:trackHeight="@dimen/_6sdp"
+            app:values="@array/slider_values" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slider_layout"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:weightSum="2.00">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apply_filter_btn"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:text="Apply" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
